@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $("document").ready(() => {
+            $("#create_text").click(() =>{
+                $("#container p:last").text("Replaced and created this text");
+            });
+
+            $("#create_var").click(() =>{
+                var newText = $("#container p:first");
+                $("#container p:last").html(newText);
+            });
+        });
+    </script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+        <a id="create" href="#">Create</a> |
+        <a id="create_text" href="#">Create Text</a> |
+        <a id="create_var" href="#">Create Variable</a>
+
+    <div id="container">
+        <p>1
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. 
+        </p>
+        <p>2
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Here.
+        </p>
+        <p>3
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <p>4
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $("document").ready(() => {
+            $("#container p:even").css("border", "1px blue solid");
+            $("#container p:odd").css("border", "1px green solid");
+
+            // $("#container p:first").css("border", "1px blue solid");
+            // $("#container p:last").css("border", "1px blue solid");
+        });
+    </script>
+
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

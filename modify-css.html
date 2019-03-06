@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $("document").ready(() => {
+            $("#add-class").click(() =>{
+                $("p:first").addClass('color');
+            });
+            $("#remove-class").click(() =>{
+                $("p:first").removeClass('color');
+            });
+            $("#toggle-class").click(() =>{
+                $("p:first").toggleClass('color');
+            });
+            $("#increase-class").click(() =>{
+                $("p:first").css("font-size", "+=1px");
+            });
+
+        });
+    </script>
+
+    <style>
+        .color{
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+        <a href="#" id="add-class">Add Class</a>
+        <a href="#" id="remove-class">Remove Class</a>
+        <a href="#" id="toggle-class">Toggle Class</a>
+        <a href="#" id="increase-class">Increase Class</a>
+    
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Here.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+
+    </div>
+
+</body>
+
+</html>

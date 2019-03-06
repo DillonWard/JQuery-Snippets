@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+        $("document").ready(function () {
+            
+            $("#textBox").on("click", function(){
+                $("#textBox").html("<h1>You clicked me </h1>");
+            });
+
+            $("#textBox").on("mouseleave", function(){
+                $("#textBox").html("<h1>You left me</h1>");
+            });
+        });
+    </script>
+
+    <style>
+        #textBox{
+            width: 150px;
+            height: 150px;
+            border: 1px solid;
+            background-color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="textBox">
+
+    </div>
+</body>
+
+</html>
